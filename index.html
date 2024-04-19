@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zomato</title>
-    <link rel="shortcut icon" href="https://b.zmtcdn.com/images/logo/zomato_logo_2017.png" type="image/x-icon" />
+    <title>Recipo</title>
+    <!-- <link rel="shortcut icon" href="https://b.zmtcdn.com/images/logo/zomato_logo_2017.png" type="image/x-icon" /> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+
     <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/> -->
     <script src="index.js"></script>
 </head>
@@ -30,14 +32,14 @@
         <div class="head">
             <!-- <img class="logo" src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="logo"> -->
             <h1>Recipo</h1>
-            <h3>Discover the best Receipes in the World!!</h3>
+            <h3>Discover the best Recipes in the World!!</h3>
             <div class="search">
                 <div class="search-item">
                     <i class="fas fa-search"></i>
-                    <input type="text" placeholder="search for a Restaurant, cuisine or a dish" />
+                    <input type="text" placeholder="Search for Receipes" />
                 </div>
                 <div class="search-item">
-                    <button id="searchbtn" onclick="search()" class="btn btn-success">Success</button>
+                    <button id="searchbtn" onclick="search()" class="btn btn-success">Search</button>
                 </div>
             </div>
         </div>
@@ -53,753 +55,453 @@
             <div class="items-details">
                 <p>Chicken butter masala</p>
             </div>
-            <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
-                alt="Pizza" onclick="displaycbm()">
+            <img src="https://thefoodieglobetrotter.com/wp-content/uploads/2020/05/Takeout-Kit-Indian-Butter-Chicken-Tikka-Masala-Basmati-Rice-Meal-Kit.jpg"
+                alt="Chicken Butter Masala" onclick="displaycbm()">
         </div>
         <div class="section-1-item" id="mm">
             <div class="items-details">
                 <p>Momos</p>
             </div>
-            <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
-                alt="Paneer butter masala" onclick="displaymomos()">
+            <img src="https://www.thespruceeats.com/thmb/UnVh_-znw7ikMUciZIx5sNqBtTU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/steamed-momos-wontons-1957616-hero-01-1c59e22bad0347daa8f0dfe12894bc3c.jpg"
+                alt="Momos" onclick="displaymomos()">
         </div>
         <div class="section-1-item" id="ck">
             <div class="items-details">
                 <p>Cake</p>
             </div>
-            <img src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
-                alt="Pasta" onclick="displaycake()">
+            <img src="https://hamariweb.com/recipes/images/recipeicon/9446.jpg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                alt="Cake" onclick="displaycake()">
         </div>
     </section>
     <!-- SECTION 2 -->
-    <div id="main-section">
-    <section class="section-2">
-        
-        <div class="section-2-heading">
-            <div id="item-img">
-                <img src="" alt="pizza-img">
+    <!-- <div id="main-section"> -->
+        <section class="section-2">
+            <div class="container">
+                <div class="section-2-heading">
+                    <div id="item-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg" alt="pizza-img"
+                            class="itemimg">
+                    </div>
+                    <div id="ingredients">
+                        <ul>
+                            <li>2 cup all purpose flour</li>
+                            <li>100 ml tomato ketchup</li>
+                            <li>1 tomato</li>
+                            <li>2 onion</li>
+                            <li> 1 teaspoon chilli flakes</li>
+                            <li> 1 teaspoon baking powder</li>
+                            <li>1 teaspoon sugar</li>
+                            <li>2 teaspoon virgin olive oil</li>
+                            <li>100 gm processed cheese</li>
+                            <li>4 mushrooms</li>
+                            <li>1/2 capsicum (green pepper)</li>
+                            <li>1 teaspoon oregano</li>
+                            <li>1/2 cup mozzarella</li>
+                            <li>1 tablespoon dry yeast</li>
+                            <li>water as required</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="section-2-container">
+                    <div id="close"> <img src="cancel.svg" alt="cancel" onclick="Close()"></div>
+                    <div class="section-receipe">
+                        <h3>Step 1 Prepare the pizza dough</h3>
+                        <p>To prepare the pizza dough, start by combining all-purpose flour with salt and baking powder
+                            on a
+                            kneading plate. Create a well in the center and add olive oil. Separately, activate yeast by
+                            mixing
+                            it with warm water and sugar, allowing it to rise for 10-15 minutes. Combine the risen yeast
+                            with
+                            the flour mixture, knead into a dough using water, and let it rest for 4-6 hours. Knead the
+                            dough
+                            again before use, resulting in a ready-to-use pizza dough.</p>
+                        <h3>Step 2 Prepare the pizza base</h3>
+                        <p>
+                            Preheat the oven at 180 degree Celsius. Now, is the time to make the pizza base when the
+                            dough
+                            is
+                            ready. Dust the space a little using dry flour and take a large amount of the pizza dough.
+                            Using
+                            a
+                            rolling pin, roll this dough into a nice circular base. (Note: Make sure that the circular
+                            base
+                            is
+                            even at all ends.) Once you have made the base, use a fork and prick the base with it so
+                            that
+                            the
+                            base doesn't rise and gets baked nicely. Put it into the preheated oven and bake it 10
+                            minutes.
+                            Now,
+                            your pizza base is ready.
+                        </p>
+                        <h3>
+                            Step 3 Chop all the vegetables for the pizza
+                        </h3>
+                        <p>
+                            Now, wash the capsicum and slice it thinly in a bowl. Then, peel the onions and cut thin
+                            slices
+                            of
+                            it as well in another bowl. And finally, cut tomatoes and mushrooms in the same manner.
+                            However,
+                            make sure that those tomatoes have less juice in them. Once all the veggies are done, Now,
+                            grate
+                            the
+                            processed and mozzarella cheese in separate bowls.
+                        </p>
+                        <h3>Step 4 Spread the sauce and veggies on the base</h3>
+                        <p>
+                            Then, take the fresh pizza base and apply tomato ketchup all over. Spread half the processed
+                            cheese
+                            all over the base and evenly put the veggies all across the base. Once you have put all the
+                            veggies,
+                            put a thick layer of mozzarella cheese.
+                        </p>
+                        <h3>Step 5 Bake the pizza at 250 degree Celsius for 10 minutes</h3>
+                        <p>
+                            Put this pizza base in a baking tray and place it inside the oven. Let the pizza bake 10
+                            minutes
+                            at
+                            250 degree Celsius. Once done, take out the baking tray and slice the pizza. Sprinkle
+                            oregano
+                            and
+                            chilli flakes as per your taste and serve hot. (Note: Make sure that the oven is preheated
+                            at
+                            250
+                            degree Celsius for 5 minutes at least.)
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div id="ingredients">
-                <ul>
-                    <li>
-                        2 cup all purpose flour
+        </section>
 
-                    </li>
-                    <li>
-                        100 ml tomato ketchup
+        <!-- SECTION 3 -->
 
-                    </li>
-                    <li>
-                        1 tomato
-
-                    </li>
-                    <li>
-                        2 onion
-
-                    </li>
-                    <li>
-                        1 teaspoon chilli flakes
-
-                    </li>
-                    <li>
-                        1 teaspoon baking powder
-
-                    </li>
-                    <li>
-                        1 teaspoon sugar
-
-                    </li>
-                    <li>
-                        2 teaspoon virgin olive oil
-
-                    </li>
-                    <li>
-                        100 gm processed cheese
-
-                    </li>
-                    <li>
-                        4 mushroom
-
-                    </li>
-                    <li>
-                        1/2 capsicum (green pepper)
-
-                    </li>
-                    <li>
-                        1 teaspoon oregano
-
-                    </li>
-                    <li>
-                        1/2 cup mozzarella
-
-                    </li>
-                    <li>
-                        1 tablespoon dry yeast
-
-                    </li>
-                    <li>
-                        water as required
-
-                    </li>
-                </ul>
+        <section class="section-3">
+            <div class="container">
+                <div class="section-3-heading">
+                    <div id="item-img">
+                        <img src="https://www.chefkunalkapur.com/wp-content/uploads/2023/11/DSC07512-1300x731.jpg?v=1699167800" alt="veg Biryani-img" class="itemimg">
+                    </div>
+                    <div id="ingredients">
+                        <ul>
+                            <li>1 cup basmati rice</li>
+                            <li> cup mixed vegetables (e.g., carrots, peas, green beans)</li>
+                            <li>1 large onion, thinly sliced</li>
+                            <li>1 tablespoon ginger-garlic paste (or minced ginger and garlic)</li>
+                            <li> 1 tomato, chopped</li>
+                            <li> 1 teaspoon biryani masala (or garam masala)</li>
+                            <li>1 teaspoon turmeric powder</li>
+                            <li>Salt to taste</li>
+                            <li>2 tablespoons vegetable oil or ghee</li>
+                            <li>Fresh cilantro (coriander leaves) for garnish (optional)</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="section-3-container">
+                    <div id="close"> <img src="cancel.svg" alt="cancel" onclick="Close()"></div>
+                    <div class="section-receipe">
+                        <h3>Step 1 Cook Basmati Rice</h3>
+                        <p>Rinse 1 cup of basmati rice under cold water until the water runs clear.
+                            Soak the rice in water for 30 minutes, then drain.
+                            In a pot, bring 2 cups of water to a boil. Add the drained rice, a pinch of salt, and cook
+                            until
+                            the rice is 70-80% done (partially cooked). Drain the rice and set aside.</p>
+                        <h3>Step 2 Prepare Vegetable Mixture</h3>
+                        <p>
+                            Heat vegetable oil or ghee in a pan over medium heat.
+                            Add thinly sliced onions and sauté until golden brown.
+                            Add ginger-garlic paste and sauté for another minute until fragrant.
+                            Add mixed vegetables and chopped tomatoes to the pan.
+                            Stir in biryani masala (or garam masala), turmeric powder, and salt to taste.
+                            Cook the vegetables until they are tender but still slightly crunchy. Remove from heat.
+                        </p>
+                        <h3>
+                            Step 3 Layer and Cook Biryani
+                        </h3>
+                        <p>
+                            In the same pot used for cooking rice, spread half of the partially cooked rice in a layer.
+                            Spread the cooked vegetable mixture evenly over the rice layer.
+                            Top with the remaining rice to form the final layer.
+                            Cover the pot with a tight-fitting lid and cook the biryani over low heat for 10-12 minutes
+                            to
+                            allow the flavors to meld together.
+                        </p>
+                        <h3>Step 4 Serve and Garnish</h3>
+                        <p>
+                            Once done, gently fluff the biryani with a fork to mix the layers.
+                            Garnish with fresh cilantro leaves (coriander) for added freshness and flavor.
+                            Serve hot with raita (yogurt dip), pickle, or salad on the side.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div> <img src="cancel.svg" alt="cancel" onclick="Close()"></div>
-        </div>
-        <div class="section-2-container">
-            <div class="section-receipe">
-                <h3>Step 1 Prepare the pizza dough</h3>
-                <p>To prepare the pizza dough, start by combining all-purpose flour with salt and baking powder on a
-                    kneading plate. Create a well in the center and add olive oil. Separately, activate yeast by mixing
-                    it with warm water and sugar, allowing it to rise for 10-15 minutes. Combine the risen yeast with
-                    the flour mixture, knead into a dough using water, and let it rest for 4-6 hours. Knead the dough
-                    again before use, resulting in a ready-to-use pizza dough.</p>
-                <h3>Step 2 Prepare the pizza base</h3>
-
-                <p>
-                    Preheat the oven at 180 degree Celsius. Now, is the time to make the pizza base when the dough is
-                    ready. Dust the space a little using dry flour and take a large amount of the pizza dough. Using a
-                    rolling pin, roll this dough into a nice circular base. (Note: Make sure that the circular base is
-                    even at all ends.) Once you have made the base, use a fork and prick the base with it so that the
-                    base doesn't rise and gets baked nicely. Put it into the preheated oven and bake it 10 minutes. Now,
-                    your pizza base is ready.
-
-                </p>
-                <h3>
-                    Step 3 Chop all the vegetables for the pizza
-                </h3>
-                <p>
-                    Now, wash the capsicum and slice it thinly in a bowl. Then, peel the onions and cut thin slices of
-                    it as well in another bowl. And finally, cut tomatoes and mushrooms in the same manner. However,
-                    make sure that those tomatoes have less juice in them. Once all the veggies are done, Now, grate the
-                    processed and mozzarella cheese in separate bowls.
-                </p>
-                <h3>Step 4 Spread the sauce and veggies on the base</h3>
-                <p>
-                    Then, take the fresh pizza base and apply tomato ketchup all over. Spread half the processed cheese
-                    all over the base and evenly put the veggies all across the base. Once you have put all the veggies,
-                    put a thick layer of mozzarella cheese.
-                </p>
-                <h3>Step 5 Bake the pizza at 250 degree Celsius for 10 minutes</h3>
-                <p>
-                    Put this pizza base in a baking tray and place it inside the oven. Let the pizza bake 10 minutes at
-                    250 degree Celsius. Once done, take out the baking tray and slice the pizza. Sprinkle oregano and
-                    chilli flakes as per your taste and serve hot. (Note: Make sure that the oven is preheated at 250
-                    degree Celsius for 5 minutes at least.)
-                </p>
-            </div>
-
-
-
-        </div>
-    </section>
-    <!-- SECTION 3 -->
-    <section class="section-3">
-        <div class="section-3-heading">
-            <div id="item-img">
-                <img src="" alt="veg Biryani-img">
-            </div>
-            <div id="ingredients">
-                <ul>
-                    <li>
-                        2 cup all purpose flour
-
-                    </li>
-                    <li>
-                        100 ml tomato ketchup
-
-                    </li>
-                    <li>
-                        1 tomato
-
-                    </li>
-                    <li>
-                        2 onion
-
-                    </li>
-                    <li>
-                        1 teaspoon chilli flakes
-
-                    </li>
-                    <li>
-                        1 teaspoon baking powder
-
-                    </li>
-                    <li>
-                        1 teaspoon sugar
-
-                    </li>
-                    <li>
-                        2 teaspoon virgin olive oil
-
-                    </li>
-                    <li>
-                        100 gm processed cheese
-
-                    </li>
-                    <li>
-                        4 mushroom
-
-                    </li>
-                    <li>
-                        1/2 capsicum (green pepper)
-
-                    </li>
-                    <li>
-                        1 teaspoon oregano
-
-                    </li>
-                    <li>
-                        1/2 cup mozzarella
-
-                    </li>
-                    <li>
-                        1 tablespoon dry yeast
-
-                    </li>
-                    <li>
-                        water as required
-
-                    </li>
-                </ul>
-            </div>
-            <div> <img src="cancel.svg" alt="cancel" onclick="Close()"></div>
-        </div>
-        <div class="section-3-container">
-            <div class="section-receipe">
-                <h3>Step 1 Prepare the pizza dough</h3>
-                <p>To prepare the pizza dough, start by combining all-purpose flour with salt and baking powder on a
-                    kneading plate. Create a well in the center and add olive oil. Separately, activate yeast by mixing
-                    it with warm water and sugar, allowing it to rise for 10-15 minutes. Combine the risen yeast with
-                    the flour mixture, knead into a dough using water, and let it rest for 4-6 hours. Knead the dough
-                    again before use, resulting in a ready-to-use pizza dough.</p>
-                <h3>Step 2 Prepare the pizza base</h3>
-
-                <p>
-                    Preheat the oven at 180 degree Celsius. Now, is the time to make the pizza base when the dough is
-                    ready. Dust the space a little using dry flour and take a large amount of the pizza dough. Using a
-                    rolling pin, roll this dough into a nice circular base. (Note: Make sure that the circular base is
-                    even at all ends.) Once you have made the base, use a fork and prick the base with it so that the
-                    base doesn't rise and gets baked nicely. Put it into the preheated oven and bake it 10 minutes. Now,
-                    your pizza base is ready.
-
-                </p>
-                <h3>
-                    Step 3 Chop all the vegetables for the pizza
-                </h3>
-                <p>
-                    Now, wash the capsicum and slice it thinly in a bowl. Then, peel the onions and cut thin slices of
-                    it as well in another bowl. And finally, cut tomatoes and mushrooms in the same manner. However,
-                    make sure that those tomatoes have less juice in them. Once all the veggies are done, Now, grate the
-                    processed and mozzarella cheese in separate bowls.
-                </p>
-                <h3>Step 4 Spread the sauce and veggies on the base</h3>
-                <p>
-                    Then, take the fresh pizza base and apply tomato ketchup all over. Spread half the processed cheese
-                    all over the base and evenly put the veggies all across the base. Once you have put all the veggies,
-                    put a thick layer of mozzarella cheese.
-                </p>
-                <h3>Step 5 Bake the pizza at 250 degree Celsius for 10 minutes</h3>
-                <p>
-                    Put this pizza base in a baking tray and place it inside the oven. Let the pizza bake 10 minutes at
-                    250 degree Celsius. Once done, take out the baking tray and slice the pizza. Sprinkle oregano and
-                    chilli flakes as per your taste and serve hot. (Note: Make sure that the oven is preheated at 250
-                    degree Celsius for 5 minutes at least.)
-                </p>
-            </div>
-
-
-
-        </div>
-    </section>
+        </section>
         <!-- SECTION 4 -->
         <section class="section-4">
-            <div class="section-4-heading">
-                <div id="item-img">
-                <img src="" alt="Chicken Hakka Noddles-img">
+            <div class="container">
+                <div class="section-4-heading">
+                    <div id="item-img">
+                        <img src="https://s3.envato.com/files/366839714/DSC_6717.jpg" alt="Chicken Hakka Noddles-img" class="itemimg">
+                    </div>
+                    <div id="ingredients">
+                        <ul>
+                            <li>200 grams egg noodles (or any noodles of your choice)</li>
+                            <li>200 grams boneless chicken breast, thinly sliced</li>
+                            <li>1 onion, thinly sliced</li>
+                            <li>1 bell pepper (capsicum), thinly sliced</li>
+                            <li> 2-3 green chilies, finely chopped (adjust to taste)</li>
+                            <li> 3-4 garlic cloves, minced</li>
+                            <li>2 tablespoons soy sauce</li>
+                            <li>1 tablespoon chili sauce (adjust to taste)</li>
+                            <li>1 tablespoon vinegar</li>
+                            <li>2 tablespoons vegetable oil</li>
+                            <li>Salt and pepper, to taste</li>
+                            <li>Fresh cilantro (coriander leaves) for garnish (optional)</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="section-4-container">
+                    <div id="close"> <img src="cancel.svg" alt="cancel" onclick="Close()"></div>
+                    <div class="section-receipe">
+                        <h3>Step 1 Cook the Noodles</h3>
+                        <p>Bring a pot of water to a boil and cook the egg noodles according to package instructions
+                            until
+                            they are al dente.
+                            Drain the cooked noodles, rinse them under cold water, and set them aside.</p>
+                        <h3>Step 2 Stir-Fry Chicken and Vegetables</h3>
+                        <p>
+                            Heat vegetable oil in a large pan or wok over medium-high heat.
+                            Add minced garlic and chopped green chilies. Sauté for a few seconds until fragrant.
+                            Add thinly sliced onions and bell peppers to the pan. Stir-fry for 2-3 minutes until they
+                            start
+                            to soften.
+                            Push the vegetables to one side of the pan and add the sliced chicken breast to the empty
+                            side.
+                            Cook the chicken for 3-4 minutes until it's no longer pink and starts to brown.
+                        </p>
+                        <h3>
+                            Step 3 Combine Noodles and Sauce
+                        </h3>
+                        <p>
+                            Lower the heat to medium and add the cooked noodles to the pan.
+                            Pour soy sauce, chili sauce, and vinegar over the noodles and chicken.
+                            Toss everything together gently using tongs or a spatula to coat the noodles and chicken
+                            evenly
+                            with the sauce.
+                            Season with salt and pepper to taste. Adjust the amount of chili sauce according to your
+                            spice
+                            preference.
+                        </p>
+                        <h3>Step 4 Serve Chicken Hakka Noodles</h3>
+                        <p>
+                            Remove the pan from heat once the noodles are heated through and well-coated with the sauce.
+                            Transfer the chicken hakka noodles to serving plates.
+                            Garnish with fresh cilantro (coriander leaves) for added freshness and flavor.
+                            Serve hot and enjoy your homemade chicken hakka noodles!
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div id="ingredients">
-                <ul>
-                    <li>
-                        2 cup all purpose flour
-
-                    </li>
-                    <li>
-                        100 ml tomato ketchup
-
-                    </li>
-                    <li>
-                        1 tomato
-
-                    </li>
-                    <li>
-                        2 onion
-
-                    </li>
-                    <li>
-                        1 teaspoon chilli flakes
-
-                    </li>
-                    <li>
-                        1 teaspoon baking powder
-
-                    </li>
-                    <li>
-                        1 teaspoon sugar
-
-                    </li>
-                    <li>
-                        2 teaspoon virgin olive oil
-
-                    </li>
-                    <li>
-                        100 gm processed cheese
-
-                    </li>
-                    <li>
-                        4 mushroom
-
-                    </li>
-                    <li>
-                        1/2 capsicum (green pepper)
-
-                    </li>
-                    <li>
-                        1 teaspoon oregano
-
-                    </li>
-                    <li>
-                        1/2 cup mozzarella
-
-                    </li>
-                    <li>
-                        1 tablespoon dry yeast
-
-                    </li>
-                    <li>
-                        water as required
-
-                    </li>
-                </ul>
-            </div>
-            <div> <img src="cancel.svg" alt="cancel" onclick="Close()"></div>
-        </div>
-        <div class="section-4-container">
-            <div class="section-receipe">
-                <h3>Step 1 Prepare the pizza dough</h3>
-                <p>To prepare the pizza dough, start by combining all-purpose flour with salt and baking powder on a
-                    kneading plate. Create a well in the center and add olive oil. Separately, activate yeast by mixing
-                    it with warm water and sugar, allowing it to rise for 10-15 minutes. Combine the risen yeast with
-                    the flour mixture, knead into a dough using water, and let it rest for 4-6 hours. Knead the dough
-                    again before use, resulting in a ready-to-use pizza dough.</p>
-                <h3>Step 2 Prepare the pizza base</h3>
-
-                <p>
-                    Preheat the oven at 180 degree Celsius. Now, is the time to make the pizza base when the dough is
-                    ready. Dust the space a little using dry flour and take a large amount of the pizza dough. Using a
-                    rolling pin, roll this dough into a nice circular base. (Note: Make sure that the circular base is
-                    even at all ends.) Once you have made the base, use a fork and prick the base with it so that the
-                    base doesn't rise and gets baked nicely. Put it into the preheated oven and bake it 10 minutes. Now,
-                    your pizza base is ready.
-
-                </p>
-                <h3>
-                    Step 3 Chop all the vegetables for the pizza
-                </h3>
-                <p>
-                    Now, wash the capsicum and slice it thinly in a bowl. Then, peel the onions and cut thin slices of
-                    it as well in another bowl. And finally, cut tomatoes and mushrooms in the same manner. However,
-                    make sure that those tomatoes have less juice in them. Once all the veggies are done, Now, grate the
-                    processed and mozzarella cheese in separate bowls.
-                </p>
-                <h3>Step 4 Spread the sauce and veggies on the base</h3>
-                <p>
-                    Then, take the fresh pizza base and apply tomato ketchup all over. Spread half the processed cheese
-                    all over the base and evenly put the veggies all across the base. Once you have put all the veggies,
-                    put a thick layer of mozzarella cheese.
-                </p>
-                <h3>Step 5 Bake the pizza at 250 degree Celsius for 10 minutes</h3>
-                <p>
-                    Put this pizza base in a baking tray and place it inside the oven. Let the pizza bake 10 minutes at
-                    250 degree Celsius. Once done, take out the baking tray and slice the pizza. Sprinkle oregano and
-                    chilli flakes as per your taste and serve hot. (Note: Make sure that the oven is preheated at 250
-                    degree Celsius for 5 minutes at least.)
-                </p>
-            </div>
-
-
-
-        </div>
-
-
-
-    </section>
-    <!-- Sesrch section complete -->
-    <!-- Popular section start -->
+        </section>
+        <!-- Sesrch section complete -->
+        <!-- Popular section start -->
         <!-- SECTION  5-->
         <section class="section-5">
-            <div class="section-5-heading">
-                <div id="item-img">
-                <img src="" alt="Chicken butter masala">
+            <div class="container">
+                <div class="section-5-heading">
+                    <div id="item-img">
+                        <img src="https://thefoodieglobetrotter.com/wp-content/uploads/2020/05/Takeout-Kit-Indian-Butter-Chicken-Tikka-Masala-Basmati-Rice-Meal-Kit.jpg" alt="Chicken butter masala" class="itemimg">
+                    </div>
+                    <div id="ingredients">
+                        <ul>
+                            <li>500 grams boneless chicken, cut into bite-sized pieces</li>
+                            <li>2 tablespoons butter</li>
+                            <li>1 large onion, finely chopped</li>
+                            <li>2 tomatoes, pureed </li>
+                            <li>1 tablespoon ginger-garlic paste (or minced ginger and garlic) </li>
+                            <li>1 teaspoon red chili powder (adjust to taste) </li>
+                            <li>1 teaspoon turmeric powder </li>
+                            <li>1 teaspoon garam masala </li>
+                            <li>1/2 cup heavy cream or full-fat yogurt</li>
+                            <li>Salt to taste</li>
+                            <li>Fresh cilantro (coriander leaves) for garnish (optional)</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="section-5-container">
+                    <div id="close"> <img src="cancel.svg" alt="cancel" onclick="Close()"></div>
+                    <div class="section-receipe">
+                        <h3>Step 1 Cook the Chicken</h3>
+                        <p>Heat 1 tablespoon of butter in a pan over medium-high heat.
+                            Add the chopped onions and sauté until they turn translucent.
+                            Add ginger-garlic paste and sauté for another minute until fragrant.
+                            Add the chicken pieces to the pan and cook until they are lightly browned on all sides.</p>
+                        <h3>Step 2 Prepare the Masala Sauce</h3>
+                        <p>
+                            Push the chicken to one side of the pan and add the remaining 1 tablespoon of butter to the
+                            empty space.
+                            Once the butter melts, add the red chili powder, turmeric powder, and garam masala to the
+                            butter. Stir for a few seconds until fragrant.
+                            Pour in the pureed tomatoes and mix well with the spices and chicken.
+                            Season with salt to taste.
+                        </p>
+                        <h3>
+                            Step 3 Simmer and Finish
+                        </h3>
+                        <p>
+                            Lower the heat to medium-low, cover the pan, and let the chicken cook in the tomato gravy
+                            for
+                            10-12 minutes or until the chicken is cooked through and tender.
+                            Stir in the heavy cream or full-fat yogurt and simmer for an additional 2-3 minutes until
+                            the
+                            sauce thickens slightly.
+                            Taste and adjust the seasoning if needed.
+                        </p>
+                        <h3>Step 4 Serve Chicken Butter Masala</h3>
+                        <p>
+                            Garnish with fresh cilantro (coriander leaves) for added freshness and flavor.
+                            Serve hot with steamed rice, naan, or roti.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div id="ingredients">
-                <ul>
-                    <li>
-                        2 cup all purpose flour
+        </section>
+        <!-- SECTION  6-->
+        <section class="section-6">
+            <div class="container">
+                <div class="section-6-heading">
+                    <div id="item-img">
+                        <img src="https://www.thespruceeats.com/thmb/UnVh_-znw7ikMUciZIx5sNqBtTU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/steamed-momos-wontons-1957616-hero-01-1c59e22bad0347daa8f0dfe12894bc3c.jpg" alt="Momos" class="itemimg">
+                    </div>
+                    <div id="ingredients">
+                        <ul>
+                            <li>1 cup all-purpose flour (maida)</li>
+                            <li>Water, as needed</li>
+                            <li>Salt, a pinch</li>
+                            <li>1 cup finely chopped mixed vegetables (cabbage, carrots, bell peppers, etc.)</li>
+                            <li>1 small onion, finely chopped</li>
+                            <li>2-3 cloves garlic, minced</li>
+                            <li>1-inch piece of ginger, grated or minced</li>
+                            <li>1 tablespoon soy sauce</li>
+                            <li>1 tablespoon cooking oil (vegetable oil or any neutral oil)</li>
+                            <li>1 teaspoon chili sauce (adjust to taste)</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="section-6-container">
+                    <div id="close"> <img src="cancel.svg" alt="cancel" onclick="Close()"></div>
+                    <div class="section-receipe">
+                        <h3>Step 1 Prepare Momos Dough </h3>
+                        <p>In a mixing bowl, combine the all-purpose flour and a pinch of salt.
+                            Gradually add water, a little at a time, and knead to form a smooth and firm dough.
+                            Cover the dough with a damp cloth and let it rest for 30 minutes.
+                        </p>
+                        <h3>Step 2 Make Vegetable Filling</h3>
 
-                    </li>
-                    <li>
-                        100 ml tomato ketchup
-
-                    </li>
-                    <li>
-                        1 tomato
-
-                    </li>
-                    <li>
-                        2 onion
-
-                    </li>
-                    <li>
-                        1 teaspoon chilli flakes
-
-                    </li>
-                    <li>
-                        1 teaspoon baking powder
-
-                    </li>
-                    <li>
-                        1 teaspoon sugar
-
-                    </li>
-                    <li>
-                        2 teaspoon virgin olive oil
-
-                    </li>
-                    <li>
-                        100 gm processed cheese
-
-                    </li>
-                    <li>
-                        4 mushroom
-
-                    </li>
-                    <li>
-                        1/2 capsicum (green pepper)
-
-                    </li>
-                    <li>
-                        1 teaspoon oregano
-
-                    </li>
-                    <li>
-                        1/2 cup mozzarella
-
-                    </li>
-                    <li>
-                        1 tablespoon dry yeast
-
-                    </li>
-                    <li>
-                        water as required
-
-                    </li>
-                </ul>
+                        <p>
+                            Heat oil in a pan over medium heat.
+                            Add minced garlic and ginger, sauté for a few seconds until fragrant.
+                            Add finely chopped onions and cook until they turn translucent.
+                            Add the chopped mixed vegetables (cabbage, carrots, bell peppers, etc.) and stir-fry for 2-3
+                            minutes until they are slightly cooked but still crunchy.
+                            Season with soy sauce, salt, and pepper. Mix well and cook for another minute.
+                            Remove from heat and let the filling cool completely.
+                        </p>
+                        <h3>
+                            Step 3 Shape and Steam Momos
+                        </h3>
+                        <p>
+                            Divide the rested dough into small lemon-sized balls.
+                            Roll out each ball into a thin circle (about 3-4 inches in diameter) using a rolling pin.
+                            Place a spoonful of the vegetable filling in the center of each dough circle.
+                            Fold the edges of the dough circle towards the center, pleating and sealing them to form a
+                            momo
+                            shape (you can refer to online tutorials for different folding techniques).
+                            Repeat with the remaining dough and filling to make all the momos.
+                        <h3>Step 4 Steam Momos</h3>
+                        <p>
+                            Grease a steamer basket or idli plates with oil to prevent sticking.
+                            Arrange the shaped momos in the steamer basket, leaving some space between them.
+                            Steam the momos over boiling water for 12-15 minutes or until the dough becomes translucent
+                            and
+                            cooked.
+                            Remove the steamed momos from the steamer and keep them warm.
+                        </p>
+                        <h3>Step 5 Serve Momos</h3>
+                        <p>
+                            Serve the hot and steamy momos immediately with the dipping sauce on the side.
+                            Enjoy these delicious vegetable momos as a snack or appetizer!
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div> <img src="cancel.svg" alt="cancel" onclick="Close()"></div>
-        </div>
-        <div class="section-5-container">
-            <div class="section-receipe">
-                <h3>Step 1 Prepare the pizza dough</h3>
-                <p>To prepare the pizza dough, start by combining all-purpose flour with salt and baking powder on a
-                    kneading plate. Create a well in the center and add olive oil. Separately, activate yeast by mixing
-                    it with warm water and sugar, allowing it to rise for 10-15 minutes. Combine the risen yeast with
-                    the flour mixture, knead into a dough using water, and let it rest for 4-6 hours. Knead the dough
-                    again before use, resulting in a ready-to-use pizza dough.</p>
-                <h3>Step 2 Prepare the pizza base</h3>
-
-                <p>
-                    Preheat the oven at 180 degree Celsius. Now, is the time to make the pizza base when the dough is
-                    ready. Dust the space a little using dry flour and take a large amount of the pizza dough. Using a
-                    rolling pin, roll this dough into a nice circular base. (Note: Make sure that the circular base is
-                    even at all ends.) Once you have made the base, use a fork and prick the base with it so that the
-                    base doesn't rise and gets baked nicely. Put it into the preheated oven and bake it 10 minutes. Now,
-                    your pizza base is ready.
-
-                </p>
-                <h3>
-                    Step 3 Chop all the vegetables for the pizza
-                </h3>
-                <p>
-                    Now, wash the capsicum and slice it thinly in a bowl. Then, peel the onions and cut thin slices of
-                    it as well in another bowl. And finally, cut tomatoes and mushrooms in the same manner. However,
-                    make sure that those tomatoes have less juice in them. Once all the veggies are done, Now, grate the
-                    processed and mozzarella cheese in separate bowls.
-                </p>
-                <h3>Step 4 Spread the sauce and veggies on the base</h3>
-                <p>
-                    Then, take the fresh pizza base and apply tomato ketchup all over. Spread half the processed cheese
-                    all over the base and evenly put the veggies all across the base. Once you have put all the veggies,
-                    put a thick layer of mozzarella cheese.
-                </p>
-                <h3>Step 5 Bake the pizza at 250 degree Celsius for 10 minutes</h3>
-                <p>
-                    Put this pizza base in a baking tray and place it inside the oven. Let the pizza bake 10 minutes at
-                    250 degree Celsius. Once done, take out the baking tray and slice the pizza. Sprinkle oregano and
-                    chilli flakes as per your taste and serve hot. (Note: Make sure that the oven is preheated at 250
-                    degree Celsius for 5 minutes at least.)
-                </p>
+        </section>
+        <!-- SECTION  7-->
+        <section class="section-7">
+            <div class="container">
+                <div class="section-7-heading">
+                    <div id="item-img">
+                        <img src="https://hamariweb.com/recipes/images/recipeicon/9446.jpg" alt="Cake" class="itemimg">
+                    </div>
+                    <div id="ingredients">
+                        <ul>
+                            <li>1.5 cups all-purpose flour (maida)</li>
+                            <li>1 cup powdered sugar</li>
+                            <li>1 cup plain yogurt (curd)</li>
+                            <li>1/2 cup vegetable oil or melted butter</li>
+                            <li>1 teaspoon baking powder</li>
+                            <li>1 teaspoon vanilla extract (for flavor)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section-7-container">
+                    <div id="close"> <img src="cancel.svg" alt="cancel" onclick="Close()"></div>
+                    <div class="section-receipe">
+                        <h3>Step 1 Preheat Oven and Prepare Cake Pan</h3>
+                        <p>Preheat your oven to 180°C (350°F). Grease a round cake pan (8-inch diameter) with butter or
+                            oil,
+                            and dust it lightly with flour to prevent sticking.</p>
+                        <h3>Step 2 Mix Dry Ingredients</h3>
+                        <p>
+                            In a mixing bowl, sift together the all-purpose flour and baking powder.
+                            Add powdered sugar to the flour mixture and mix well to combine.
+                        </p>
+                        <h3>
+                            Step 3 Combine Wet Ingredients
+                        </h3>
+                        <p>
+                            In another bowl, whisk together the plain yogurt (curd) and vegetable oil (or melted butter)
+                            until smooth.
+                            If desired, add vanilla extract to the wet mixture for flavor.
+                        </p>
+                        <h3>Step 4 Combine Dry and Wet Ingredients</h3>
+                        <p>
+                            Gradually add the dry flour mixture to the wet yogurt mixture.
+                            Use a spatula or whisk to gently fold the ingredients together until you get a smooth cake
+                            batter. Avoid overmixing.
+                        </p>
+                        <h3>Step 5 Bake the Cake and Serve</h3>
+                        <p>
+                            Pour the cake batter into the prepared cake pan, spreading it evenly.
+                            Tap the pan gently on the counter to remove any air bubbles.
+                            Place the cake pan in the preheated oven and bake for 25-30 minutes or until a toothpick
+                            inserted into the center of the cake comes out clean.
+                            The baking time may vary depending on your oven, so keep an eye on the cake after 25
+                            minutes.
+                            Once the cake is baked, remove it from the oven and let it cool in the pan for 10 minutes.
+                            After cooling, gently run a knife around the edges of the cake to loosen it from the pan.
+                            Invert the cake onto a wire rack and let it cool completely before slicing and serving.
+                        </p>
+                    </div>
+                </div>
             </div>
-
-
-
-        </div>
-
-
-    </section>
-    <!-- SECTION  6-->
-    <section class="section-6">
-        <div class="section-6-heading">
-            <div id="item-img">
-                <img src="" alt="Momos" >
-            </div>
-            <div id="ingredients">
-                <ul>
-                    <li>
-                        2 cup all purpose flour
-
-                    </li>
-                    <li>
-                        100 ml tomato ketchup
-
-                    </li>
-                    <li>
-                        1 tomato
-
-                    </li>
-                    <li>
-                        2 onion
-
-                    </li>
-                    <li>
-                        1 teaspoon chilli flakes
-
-                    </li>
-                    <li>
-                        1 teaspoon baking powder
-
-                    </li>
-                    <li>
-                        1 teaspoon sugar
-
-                    </li>
-                    <li>
-                        2 teaspoon virgin olive oil
-
-                    </li>
-                    <li>
-                        100 gm processed cheese
-
-                    </li>
-                    <li>
-                        4 mushroom
-
-                    </li>
-                    <li>
-                        1/2 capsicum (green pepper)
-
-                    </li>
-                    <li>
-                        1 teaspoon oregano
-
-                    </li>
-                    <li>
-                        1/2 cup mozzarella
-
-                    </li>
-                    <li>
-                        1 tablespoon dry yeast
-
-                    </li>
-                    <li>
-                        water as required
-
-                    </li>
-                </ul>
-            </div>
-            <div> <img src="cancel.svg" alt="cancel" onclick="Close()"></div>
-        </div>
-        <div class="section-6-container">
-            <div class="section-receipe">
-                <h3>Step 1 Prepare the pizza dough</h3>
-                <p>To prepare the pizza dough, start by combining all-purpose flour with salt and baking powder on a
-                    kneading plate. Create a well in the center and add olive oil. Separately, activate yeast by mixing
-                    it with warm water and sugar, allowing it to rise for 10-15 minutes. Combine the risen yeast with
-                    the flour mixture, knead into a dough using water, and let it rest for 4-6 hours. Knead the dough
-                    again before use, resulting in a ready-to-use pizza dough.</p>
-                <h3>Step 2 Prepare the pizza base</h3>
-
-                <p>
-                    Preheat the oven at 180 degree Celsius. Now, is the time to make the pizza base when the dough is
-                    ready. Dust the space a little using dry flour and take a large amount of the pizza dough. Using a
-                    rolling pin, roll this dough into a nice circular base. (Note: Make sure that the circular base is
-                    even at all ends.) Once you have made the base, use a fork and prick the base with it so that the
-                    base doesn't rise and gets baked nicely. Put it into the preheated oven and bake it 10 minutes. Now,
-                    your pizza base is ready.
-
-                </p>
-                <h3>
-                    Step 3 Chop all the vegetables for the pizza
-                </h3>
-                <p>
-                    Now, wash the capsicum and slice it thinly in a bowl. Then, peel the onions and cut thin slices of
-                    it as well in another bowl. And finally, cut tomatoes and mushrooms in the same manner. However,
-                    make sure that those tomatoes have less juice in them. Once all the veggies are done, Now, grate the
-                    processed and mozzarella cheese in separate bowls.
-                </p>
-                <h3>Step 4 Spread the sauce and veggies on the base</h3>
-                <p>
-                    Then, take the fresh pizza base and apply tomato ketchup all over. Spread half the processed cheese
-                    all over the base and evenly put the veggies all across the base. Once you have put all the veggies,
-                    put a thick layer of mozzarella cheese.
-                </p>
-                <h3>Step 5 Bake the pizza at 250 degree Celsius for 10 minutes</h3>
-                <p>
-                    Put this pizza base in a baking tray and place it inside the oven. Let the pizza bake 10 minutes at
-                    250 degree Celsius. Once done, take out the baking tray and slice the pizza. Sprinkle oregano and
-                    chilli flakes as per your taste and serve hot. (Note: Make sure that the oven is preheated at 250
-                    degree Celsius for 5 minutes at least.)
-                </p>
-            </div>
-
-
-
-        </div>
-
-
-    </section>
-    <!-- SECTION  7-->
-    <section class="section-7">
-        <div class="section-7-heading">
-            <div id="item-img">
-                <img src="" alt="Cake">
-            </div>
-            <div id="ingredients">
-                <ul>
-                    <li>
-                        2 cup all purpose flour
-
-                    </li>
-                    <li>
-                        100 ml tomato ketchup
-
-                    </li>
-                    <li>
-                        1 tomato
-
-                    </li>
-                    <li>
-                        2 onion
-
-                    </li>
-                    <li>
-                        1 teaspoon chilli flakes
-
-                    </li>
-                    <li>
-                        1 teaspoon baking powder
-
-                    </li>
-                    <li>
-                        1 teaspoon sugar
-
-                    </li>
-                    <li>
-                        2 teaspoon virgin olive oil
-
-                    </li>
-                    <li>
-                        100 gm processed cheese
-
-                    </li>
-                    <li>
-                        4 mushroom
-
-                    </li>
-                    <li>
-                        1/2 capsicum (green pepper)
-
-                    </li>
-                    <li>
-                        1 teaspoon oregano
-
-                    </li>
-                    <li>
-                        1/2 cup mozzarella
-
-                    </li>
-                    <li>
-                        1 tablespoon dry yeast
-
-                    </li>
-                    <li>
-                        water as required
-
-                    </li>
-                </ul>
-            </div>
-            <div> <img src="cancel.svg" alt="cancel" onclick="Close()"></div>
-        </div>
-        <div class="section-7-container">
-            <div class="section-receipe">
-                <h3>Step 1 Prepare the pizza dough</h3>
-                <p>To prepare the pizza dough, start by combining all-purpose flour with salt and baking powder on a
-                    kneading plate. Create a well in the center and add olive oil. Separately, activate yeast by mixing
-                    it with warm water and sugar, allowing it to rise for 10-15 minutes. Combine the risen yeast with
-                    the flour mixture, knead into a dough using water, and let it rest for 4-6 hours. Knead the dough
-                    again before use, resulting in a ready-to-use pizza dough.</p>
-                <h3>Step 2 Prepare the pizza base</h3>
-
-                <p>
-                    Preheat the oven at 180 degree Celsius. Now, is the time to make the pizza base when the dough is
-                    ready. Dust the space a little using dry flour and take a large amount of the pizza dough. Using a
-                    rolling pin, roll this dough into a nice circular base. (Note: Make sure that the circular base is
-                    even at all ends.) Once you have made the base, use a fork and prick the base with it so that the
-                    base doesn't rise and gets baked nicely. Put it into the preheated oven and bake it 10 minutes. Now,
-                    your pizza base is ready.
-
-                </p>
-                <h3>
-                    Step 3 Chop all the vegetables for the pizza
-                </h3>
-                <p>
-                    Now, wash the capsicum and slice it thinly in a bowl. Then, peel the onions and cut thin slices of
-                    it as well in another bowl. And finally, cut tomatoes and mushrooms in the same manner. However,
-                    make sure that those tomatoes have less juice in them. Once all the veggies are done, Now, grate the
-                    processed and mozzarella cheese in separate bowls.
-                </p>
-                <h3>Step 4 Spread the sauce and veggies on the base</h3>
-                <p>
-                    Then, take the fresh pizza base and apply tomato ketchup all over. Spread half the processed cheese
-                    all over the base and evenly put the veggies all across the base. Once you have put all the veggies,
-                    put a thick layer of mozzarella cheese.
-                </p>
-                <h3>Step 5 Bake the pizza at 250 degree Celsius for 10 minutes</h3>
-                <p>
-                    Put this pizza base in a baking tray and place it inside the oven. Let the pizza bake 10 minutes at
-                    250 degree Celsius. Once done, take out the baking tray and slice the pizza. Sprinkle oregano and
-                    chilli flakes as per your taste and serve hot. (Note: Make sure that the oven is preheated at 250
-                    degree Celsius for 5 minutes at least.)
-                </p>
-            </div>
-
-
-
-        </div>
-
-
-    </section>
-</div>
-
+        </section>
+    </div>
     <footer>
         &copy; Copyright Priyanka Chaudhari &amp; Mokshi Aya 2024 | MIT WPU
     </footer>
