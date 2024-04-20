@@ -92,10 +92,11 @@ button {
     transform: translateY(1px); 
   }
   
-h1 {
+h6 {
     color: brown;
     font-family: "Dancing Script";
     font-size: 75px;
+    font-size: medium;
 }
 .section-2,.section-3,.section-4,.section-5,.section-6,.section-7{
     display: none;
