@@ -1,8 +1,10 @@
 function search() {
-   
+    // var check = document.getElementById("main-section"); 
+
+    
     var input = document.querySelector('input[type="text"]');
     var inputValue = input.value.toLowerCase(); 
-    close();
+    hideAllSections();
 
     if (inputValue === "pizza") { 
         
@@ -32,25 +34,25 @@ function search() {
     }
 }
 document.addEventListener('DOMContentLoaded', function() {
-    close(); 
+    hideAllSections();
 });
 
 function displaycbm(){
-    close();
+    hideAllSections();
     document.querySelector('.section-5').style.display = "block"; 
 
 }
 function displaymomos(){
-    close();
+    hideAllSections();
     document.querySelector('.section-6').style.display = "block"; 
 
 }
 function displaycake(){
-    close();
+    hideAllSections();
     document.querySelector('.section-7').style.display = "block"; 
 
 }
-function Close(){
+function hideAllSections(){
     if(document.querySelector('.section-2').style.display=="block" || document.querySelector('.section-3').style.display=="block" || document.querySelector('.section-4').style.display=="block"  || document.querySelector('.section-5').style.display=="block"  || document.querySelector('.section-6').style.display=="block"|| document.querySelector('.section-7').style.display=="block" ){
         document.querySelector('.section-2').style.display="none";
         document.querySelector('.section-3').style.display="none";
@@ -61,9 +63,14 @@ function Close(){
         
     }
 }
+function Close(containerId) {
+    var recipeContainers = document.querySelectorAll('.section-2, .section-3, .section-4, .section-5, .section-6, .section-7');
+    recipeContainers.forEach(function(container) {
+        container.style.display = "none";
+    });
 var input = document.querySelector('input[type="text"]');
     input.value = "";
-
+}
 // function search() {
 //     var input = document.querySelector('input[type="text"]');
 //     var inputValue = input.value.toLowerCase();
