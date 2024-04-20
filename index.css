@@ -66,9 +66,9 @@ header {
 a{
     color: white;
 }
-/* #viewed{
+#viewed{
     display: none;
-} */
+}
 h1 {
     color: aliceblue;
     font-family: "Dancing Script";
