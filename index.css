@@ -59,8 +59,9 @@ header {
     align-items: center;
 }
 
-.logo {
-    width: 25vw;
+.logo img {
+    width: 75px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 h1 {
