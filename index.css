@@ -92,7 +92,20 @@ button {
     transform: translateY(1px); 
   }
   
-
+h6 {
+    text-align: center;
+    color: brown;
+    font-family: "Dancing Script";
+    font-size: 2em;
+    font-size: medium;
+    padding: 0;
+    margin: 0;
+}
+i{
+    color: purple;
+    text-align: center;
+    height: 2em;
+}
 .section-2,.section-3,.section-4,.section-5,.section-6,.section-7{
     display: none;
 }
@@ -270,35 +283,5 @@ footer {
     flex-direction: row;
     justify-content: center;
     background-color: rgb(224, 179, 95);
-}
-@media screen and (max-width: 600px) {
-    
-    body {
-        font-size: 14px;
-    }
-    .container {
-        max-width: 90%;
-        padding: 10px;
-    }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    body {
-        font-size: 16px;
-    }
-    .container {
-        max-width: 70%;
-        padding: 20px;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    body {
-        font-size: 18px;
-    }
-    .container {
-        max-width: 80%;
-        padding: 30px;
-    }
 }
 }
