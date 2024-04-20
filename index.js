@@ -120,6 +120,7 @@
 //         container.style.display = "none";
 //     });
 // }
+
 function search() {
     var input = document.querySelector('input[type="text"]');
     var inputValue = input.value.toLowerCase();
