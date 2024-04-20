@@ -1,3 +1,5 @@
+hideAllSections();
+
 function search() {
     // var check = document.getElementById("main-section"); 
 
@@ -53,7 +55,7 @@ function displaycake(){
 
 }
 function hideAllSections(){
-    if(document.querySelector('.section-2').style.display=="block" || document.querySelector('.section-3').style.display=="block" || document.querySelector('.section-4').style.display=="block"  || document.querySelector('.section-5').style.display=="block"  || document.querySelector('.section-6').style.display=="block"|| document.querySelector('.section-7').style.display=="block" ){
+
         document.querySelector('.section-2').style.display="none";
         document.querySelector('.section-3').style.display="none";
         document.querySelector('.section-4').style.display="none";
@@ -62,7 +64,7 @@ function hideAllSections(){
         document.querySelector('.section-7').style.display="none";
         
     }
-}
+
 function Close(containerId) {
     var recipeContainers = document.querySelectorAll('.section-2, .section-3, .section-4, .section-5, .section-6, .section-7');
     recipeContainers.forEach(function(container) {
