@@ -1,4 +1,3 @@
-hideAllSections();
 
 function search() {
     // var check = document.getElementById("main-section"); 
@@ -73,6 +72,8 @@ function Close(containerId) {
 var input = document.querySelector('input[type="text"]');
     input.value = "";
 }
+hideAllSections();
+
 // function search() {
 //     var input = document.querySelector('input[type="text"]');
 //     var inputValue = input.value.toLowerCase();
